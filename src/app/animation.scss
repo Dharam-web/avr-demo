@@ -1,0 +1,63 @@
+// scroll view scale animation
+
+.card-view-scale {
+    animation: scroll-view-scale linear 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+    @keyframes scroll-view-scale {
+        from {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+
+// Default styles
+p.MsoNormal,
+li.MsoNormal,
+div.MsoNormal {
+  margin: {
+    top: 0in;
+    right: 0in;
+    bottom: 8pt;
+    left: 0in;
+  }
+  line-height: 107%;
+  font: {
+    size: 11pt;
+    family: "Calibri", sans-serif;
+  }
+}
+
+.MsoChpDefault {
+  font-family: "Calibri", sans-serif;
+}
+
+.MsoPapDefault {
+  margin-bottom: 8pt;
+  line-height: 107%;
+}
+
+// Page definitions
+@page WordSection1 {
+  size: 595.3pt 841.9pt;
+  margin: 1in;
+}
+
+div.WordSection1 {
+  page: WordSection1;
+}
+
+// List defaults
+ol {
+  margin-bottom: 0in;
+}
+
+ul {
+  margin-bottom: 0in;
+}
