@@ -38,8 +38,9 @@ const EnquiryForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
+  // Use same-origin (relative URL) when unset so Railway single deploy works
   const ENQUIRY_API_URL =
-    process.env.NEXT_PUBLIC_ENQUIRY_API_URL || "http://localhost:3001";
+    process.env.NEXT_PUBLIC_ENQUIRY_API_URL ?? "";
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
