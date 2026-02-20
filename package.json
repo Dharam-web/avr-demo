@@ -2,6 +2,7 @@
   "name": "avr",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "npm@10.2.5",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
+    "@types/nodemailer": "^7.0.10",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^10.0.0",
