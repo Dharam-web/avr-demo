@@ -38,10 +38,6 @@ const EnquiryForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
-  // Use same-origin (relative URL) when unset so Railway single deploy works
-  const ENQUIRY_API_URL =
-    process.env.NEXT_PUBLIC_ENQUIRY_API_URL ?? "";
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     setSubmitError(null);
@@ -72,7 +68,7 @@ const EnquiryForm: React.FC = () => {
 
     setIsSubmitting(true);
     try {
-      const res = await fetch(`${ENQUIRY_API_URL}/api/send-enquiry`, {
+      const res = await fetch("/api/send-enquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -90,7 +86,7 @@ const EnquiryForm: React.FC = () => {
         err instanceof Error ? err.message : "Something went wrong. Please try again.";
       setSubmitError(
         message.includes("fetch") || message.includes("Failed")
-          ? "Cannot reach server. Is the enquiry server running (npm run server)?"
+          ? "Unable to reach the server. Please check your connection and try again."
           : message
       );
     } finally {
