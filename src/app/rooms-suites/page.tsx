@@ -9,8 +9,9 @@ import RoomSection from "./components/RoomSection";
 import { roomsPageData } from "./roomsPageData";
 
 export const metadata = {
-  title: "Rooms & Suites | AnandVardhan Resorts",
-  description: "Rooms & Suites | AnandVardhan Resorts",
+  title: "Resort Rooms & Suites in Manali | Anand Vardhan Rooms",
+  description: "Explore elegantly designed rooms & suites at Anand Vardhan Resort, Naggar Manali. Cozy interiors & top-class comfort. Check availability & book now!",
+  keywords: "resort rooms & suites in manali room in naggar anand vardhan rooms",
 };
 
 const page = () => {

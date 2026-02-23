@@ -1,5 +1,5 @@
 import { Container, Section } from "@/components/sectionComponants";
-import JobForm from "./JobForm";
+import JobForm from "./JobFormNew";
 
 interface FormSectionProps {
   title: string;

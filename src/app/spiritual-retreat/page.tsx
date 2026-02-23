@@ -9,9 +9,9 @@ import BookNow from "./components/BookNow";
 import { spiritualPageData } from "./spiritualPageData";
 
 export const metadata = {
-  title: "Spiritual Retreat - Anand Vardhan Resorts",
-  description:
-    "Anand Vardhan Resorts offers a divine escape. Discover spiritual wellness with guided meditation, sacred spaces, and natural serenity.",
+  title: "Spiritual Retreats in Manali & Naggar | Anand Vardhan Resort",
+  description: "Reconnect with your inner self at Anand Vardhan spiritual retreat in Naggar, Manali. Yoga, meditation & healing experiences in manali. Book your retreat today!",
+  keywords: "Spiritual Retreats in Manali Spiritual resort in manali Spiritual Retreats in Naggar",
 };
 
 const page = () => {

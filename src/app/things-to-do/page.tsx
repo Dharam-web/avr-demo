@@ -4,9 +4,9 @@ import { SectionWithContainer } from "@/components/sectionComponants";
 import { thingsToDoData } from "./thingsToDoPageData";
 
 export const metadata = {
-  title: "Epic Adventure Activities in Manali  - Anand Vardhan Resorts ",
-  description:
-    "Looking for things to do? Anand Vardhan Resorts blends leisure, nature, and culture with curated experiences in cycling, Trekking, and Adventure parks for a fulfilling vacation.",
+  title: "Things to Do in Manali | Adventure Activities & Experiences",
+  description: "Discover the best things to do in Manali city—from thrilling adventure activities to serene nature walks. Explore top experiences. Plan your trip with us today!",
+  keywords: "things to do in manali things to do in manali city adventure activities in manali",
 };
 
 const page = () => {

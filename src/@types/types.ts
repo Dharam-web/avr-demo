@@ -108,9 +108,11 @@ export interface OurCulinaryOfferingsPropsTypes {
     label: string;
   };
   cards: {
-    src: string;
+    src?: string;
+    images?: string[];
     description: string;
   }[];
+
 }
 
 export interface OnlinePlatformsPropsTypes {

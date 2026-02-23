@@ -1,3 +1,4 @@
+"use client";
 import { Autoplay } from "swiper/modules";
 import SwiperCarousel from "./SwiperCarousel";
 

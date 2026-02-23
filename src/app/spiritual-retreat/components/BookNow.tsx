@@ -1,4 +1,4 @@
-import Form from "@/components/form/Form";
+import Form from "./SpiritualForm";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import Image from "next/image";
 import { FC } from "react";

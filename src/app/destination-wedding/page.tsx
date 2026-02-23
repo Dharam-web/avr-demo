@@ -5,9 +5,9 @@ import { AboutWedding, Faq, WeddingServices } from "./components";
 import { weddingPageData } from "./weddingPageData";
 
 export const metadata = {
-  title: "Destination Wedding in Manali  - Anand Vardhan Resorts",
-  description:
-    "Celebrate love with a magical destination wedding at Anand Vardhan Resorts. A perfect blend of tradition, nature, and unforgettable moments.",
+  title: "Destination Wedding in Manali | Best Wedding Venue in Manali",
+  description: "Plan your dream destination wedding in Manali at Anand Vardhan Resort. Best venues, customized decor & packages. Enquire & make your day memorable!",
+  keywords: "destination wedding in manali resorts in manali for wedding wedding venue in manali",
 };
 
 const page = () => {

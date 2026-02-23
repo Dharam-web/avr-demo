@@ -1,5 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Block internal system files
+Disallow: /_next/
+Disallow: /api/
 
 Sitemap: https://www.anandvardhanresorts.com/sitemap.xml

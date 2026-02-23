@@ -9,6 +9,7 @@ import AmenitiesPopUp from "@/components/pop-up/AmenitiesPopUp";
 import { WebsiteProvider } from "@/context/WebsiteContext";
 import { Montserrat, Plus_Jakarta_Sans } from "next/font/google";
 import FullscreenImagePopup1 from '@/components/pop-up/FullscreenImagePopup1';
+import ConditionalLayout from "@/components/ConditionalLayout";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -21,12 +22,11 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Manali Retreat Resort | Wellness Resort in Manali - AnandVardhan Resorts",
+  title: "Best Resorts in Manali | Luxury Resort in Naggar",
   description:
-    "Looking for a spiritual resort in Manali? AnandVardhan Resorts offers wellness retreats, guided meditation, spa treatments, and a soulful café experience.",
+    "Experience the finest luxury resorts in Manali at Anand Vardhan, Naggar. Breathtaking views, world-class amenities & warm hospitality. Book your stay today!",
   keywords:
-    "Manali Retreat Resort, Wellness Resort in Manali, AnandVardhan Resorts, Manali Retreat Resort, Manali Retreat Resort, Manali Retreat Resort, Manali Retreat Resort, Manali Retreat Resort",
+    "best resorts in manali resorts in naggar manali luxury resorts in manali",
   alternates: {
     canonical: "https://anandvardhanresorts.com",
     languages: {
@@ -34,10 +34,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title:
-      "Manali Retreat Resort | Wellness Resort in Manali - AnandVardhan Resorts",
+    title: "Best Resorts in Manali | Luxury Resort in Naggar",
     description:
-      "Looking for a spiritual resort in Manali? AnandVardhan Resorts offers wellness retreats, guided meditation, spa treatments, and a soulful Café experience.",
+      "Experience the finest luxury resorts in Manali at Anand Vardhan, Naggar. Breathtaking views, world-class amenities & warm hospitality. Book your stay today!",
     images: [
       {
         url: "https://anandvardhanresorts.com/og-image.jpg",
@@ -404,9 +403,11 @@ export default function RootLayout({
         {/* End Google Tag Manager (noscript) */}
 
         <WebsiteProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          {/* <Navbar /> */}
+          <ConditionalLayout>
+            {children}
+          </ConditionalLayout>
+          {/* <Footer /> */}
           <Call callNumber="919317207373" />
           <FullscreenImagePopup1 />
           <AmenitiesPopUp />

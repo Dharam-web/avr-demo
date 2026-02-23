@@ -4,10 +4,9 @@ import PureVeg from "./components/PureVeg";
 import { diningPageData } from "./diningPageData";
 
 export const metadata = {
-  title:
-    "Fine Dining and Luxurious Culinary Experience -Anand Vardhan Resorts ",
-  description:
-    "Enjoy a luxury Culinary Experience  dining at Anand Vardhan Resorts with delicious menus, serene surroundings, and exceptional service that make every bite unforgettable.",
+  title: "Best Pure Veg Restaurant in Manali | Open Air Cafe in Naggar",
+  description: "Delicious pure veg cuisine in Manali at Anand Vardhan—one of the best restaurants & cafes in Naggar. Fresh, flavorful meals await. Reserve your table now!",
+  keywords: "best restaurants in manali pure veg restaurants in manali cafes in naggar pure veg hotel in manali",
 };
 
 const page = () => {

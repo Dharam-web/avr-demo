@@ -1,137 +1,12 @@
-import { imageUrl } from "@/data/links";
 import {
   BookingRatingIcon,
   ExpediaRatingIcon,
   HotelRatingIcon,
   TripAdvisorRatingIcon,
 } from "@/icons/icons";
-import { NestledInNature, PeacefulLocation, PureVeg } from "../../icons/icons";
-import { contact } from "../../../constent";
 
-export const homePageData = {
-  bannerData: {
-    images: ["/IMG_8380.webp",
-      "/Home.webp"],
-    title: "Best luxury pure vegetarian resort in manali",
-    subTitle: "Welcome to",
-    description: "A PURE VEGETARIAN RESORT IN MANALI",
-  },
-  aboutUsData: {
-    title: "ABOUT US",
-    subtitle: "Relax In A Tranquil Hideaway With The Sound Of Nature",
-    desc: [
-      "Discover a haven of natural beauty and culinary delight at Anand Vardhan, the finest luxury resort in Manali, serving exquisite vegetarian cuisine.",
-      "Wake up to fresh mountain air, chirping birds, and breathtaking views of the Dhauladhar and Pir Panjal ranges. Nestled amid apple orchards and pine forests near Manali, our resort offers soulful escapes and warm hospitality away from the city’s hustle.",
-    ],
-    images: [
-      "/home-about2.png",
-      "/home-about1.png",
-      "/home-about3.jpg",
-      "/home-about4.jpg",
-    ],
-    link: {
-      label: "More About Us",
-      href: "/about-us/",
-    },
-  },
-  roomsAndSuites: {
-    title: "ROOMS & SUITES",
-    subTitle: "Where Comfort Meets Serenity",
-    cards: [
-      {
-        images: [
-          imageUrl + "luxurySuite/002.webp",
-          imageUrl + "luxurySuite/005.webp",
-          imageUrl + "luxurySuite/003.webp",
-        ],
-        title: "Luxury Suite Room",
-        link: {
-          href: "/rooms-suites/#rooms",
-          label: "Room Details",
-        },
-      },
-      {
-        images: [
-          imageUrl + "superDeluxe/003.webp",
-          imageUrl + "superDeluxe/005.webp",
-          imageUrl + "superDeluxe/001.webp",
-        ],
-        title: "Super Deluxe Room",
-        link: {
-          href: "/rooms-suites/#rooms",
-          label: "Room Details",
-        },
-      },
-      {
-        images: [
-          imageUrl + "Deluxe/003.webp",
-          imageUrl + "Deluxe/004.webp",
-          imageUrl + "Deluxe/001.webp",
-        ],
-        title: "Deluxe Room",
-        link: {
-          href: "/rooms-suites/#rooms",
-          label: "Room Details",
-        },
-      },
-    ],
-  },
-  experiences: {
-    title: "EXPERIENCES",
-    subTitle: "Designed for Joy, Built for Memories",
-    cards: [
-      {
-        src: "/destination-wedding.png",
-        title: "Destination Wedding",
-      },
-      {
-        src: "/spiritual-retreat.png",
-        title: "Spiritual Retreat",
-      },
-      {
-        src: imageUrl + "IMG_8155.webp",
-        title: "Pure Vegetarian Dining",
-      },
-    ],
-  },
-  whyChooseUs: {
-    title: "UNIQUE EDGE",
-    subTitle: "Why Us?",
-    description:
-      "A perfect blend of luxury and nature, offering serene escapes amidst the Himalayas. Exquisite vegetarian cuisine and heartfelt hospitality that make every stay memorable.",
-    cards: [
-      {
-        icon: <PureVeg />,
-        title: "Pure Veg",
-      },
-      {
-        icon: <PeacefulLocation />,
-        title: "Peaceful Location Nestled in Nature",
-      },
-      {
-        icon: <NestledInNature />,
-        title: "family centric",
-      },
-    ],
-  },
-  ourCulinaryOfferings: {
-    title: "OUR CULINARY OFFERINGS",
-    subTitle: "A Celebration of Pure Vegetarian Flavors",
-    link: {
-      href: "/contact-us/",
-      label: "Know More",
-    },
-    cards: [
-      {
-        src: imageUrl + "IMG_8155.webp",
-        description: "Govind Prasadam Pure Vegetarian Restaurant",
-      },
-      {
-        src: imageUrl + "IMG_8354.webp",
-        description: "Open Air Cafe",
-      },
-    ],
-  },
+export const sectionContentData = {
+  // onlinePlatforms
   onlinePlatforms: {
     title: "HIGHEST RATINGS ON ONLINE PLATFORMS",
     cards: [
@@ -157,19 +32,22 @@ export const homePageData = {
       },
     ],
   },
+  // testimonials
   testimonials: {
     title: "TESTIMONIALS",
     subTitle: "Appreciation From Our Guests",
     reviewPartners: [
       {
         name: "Google Rating",
-        logo: "/Google.png",
+        logo: "/google.png",
         rating: "4.8",
+        href:"https://www.google.com/travel/search?q=anand%20vardhan%20resorts&g2lb=4965990%2C4969803%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72471280%2C72472051%2C72481459%2C72485658%2C72560029%2C72573224%2C72616120%2C72619927%2C72647020%2C72648289%2C72686036%2C72760082%2C72803964%2C72808078%2C72825294%2C72827241%2C72832976%2C72852292%2C72860862%2C72881573%2C72882230%2C72885032%2C72916970&hl=en-IN&gl=in&cs=1&ssta=1&ts=CAEaRgooEiYyJDB4MzkwNDg5NGVmMjU2MzgxZDoweDUzNmYwYTlhMzA2YTI3MRIaEhQKBwjpDxADGBkSBwjpDxADGBoYATICEAA&qs=CAEyE0Nnb0k4Y1NhbUpxVnZKc0ZFQUU4AkIJCXGiBqOp8DYFQgkJcaIGo6nwNgU&ap=ugEHcmV2aWV3cw&ictx=111&ved=0CAAQ5JsGahcKEwjAiKitiKOMAxUAAAAAHQAAAAAQBQ",
       },
       {
         name: "Trip Advisor",
         logo: "/trip.png",
         rating: "4.9",
+        href:"https://www.tripadvisor.in/Hotel_Review-g297617-d24062550-Reviews-Anand_Vardhan_Resorts-Himachal_Pradesh.html",
       },
     ],
     cards: [
@@ -228,15 +106,5 @@ export const homePageData = {
           "The property is just excellent with tremendous service and staff. It was my daughter birthday and Anand Vardhan Resort gave us a wonderful surprise with decorated room and a dedicated party area to celebrate birthday for our little one. I would highly recommend this for family and friends outing.",
       },
     ],
-  },
-  addCardData: {
-    title:
-      "Discover the best of Himachal Pradesh tourism from Anand Vardhan Resort",
-    description:
-      "Your perfect gateway to Naggar's top attractions, heritage sites, and natural wonders in the heart of Kullu Valley.",
-    link: {
-      href: contact.cta,
-      label: "Book Now",
-    },
   },
 };
